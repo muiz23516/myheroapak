@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hero, My Apak</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        .col {
+            flex: 1;
+            margin: 10px;
+        }
+        .video-col {
+            margin-left: 20px; /* Adjust this value to control the space between the text and the video */
+        }
+        .row {
+            display: flex;
+            align-items: center;
+        }
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="guitar.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="biodata.html">BIODATA</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="experience.html">EXPERIENCES</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <h1>My Hero, My Apak</h1>
+                <p>Thank you for always being my rock and inspiration. Your love and support mean the world to me.</p>
+            </div>
+            <div class="col video-col">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-70j-veZxWM?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+                <div class="caption">Video above show My Dad's dream place, Bromo</div>
+            </div>
+        </div>
+        
+        <center>
+            <div id="current-time">
+                <!-- Current time will be displayed here -->
+            </div>
+        </center>
+    </div>
+
+    <script>
+        function displayCurrentTime() {
+            var currentTimeElement = document.getElementById('current-time');
+
+            // Create a new Date object
+            var now = new Date();
+
+            // Adjust time zone offset to Malaysian time (GMT+8)
+            var malaysiaTime = new Date(now.getTime() + (8 * 60 * 60 * 1000));
+
+            // Format the time as HH:MM:SS
+            var hours = malaysiaTime.getUTCHours().toString().padStart(2, '0');
+            var minutes = malaysiaTime.getUTCMinutes().toString().padStart(2, '0');
+            var seconds = malaysiaTime.getUTCSeconds().toString().padStart(2, '0');
+
+            // Display the formatted time
+            currentTimeElement.textContent = 'Current Time in Malaysia: ' + hours + ':' + minutes + ':' + seconds;
+        }
+
+        // Call the function initially to display the current time
+        displayCurrentTime();
+
+        // Refresh the time every second
+        setInterval(displayCurrentTime, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Hero, My Apak</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Roboto', sans-serif;">
+    <div class="container" style="width: 100%; height: 200vh; background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(keluarga.jpeg); background-position: center; background-size: cover; padding-left: 8%; padding-right: 8%; box-sizing: border-box;">
+        <div class="navbar" style="height: 12%; display: flex; align-items: center;">
+            <img src="guitar.png" class="logo" style="width: 50px; cursor: pointer;">
+            <nav style="flex: 1; text-align: right;">
+                <ul>
+                    <li style="list-style: none; display: inline-block; margin-left: 60px;"><a href="index.html" style="text-decoration: none; color: #fff; font-size: 13px;">HOME</a></li>
+                    <li style="list-style: none; display: inline-block; margin-left: 60px;"><a href="biodata.html" style="text-decoration: none; color: #fff; font-size: 13px;">BIODATA</a></li>
+                    <li style="list-style: none; display: inline-block; margin-left: 60px;"><a href="education.html" style="text-decoration: none; color: #fff; font-size: 13px;">EDUCATION</a></li>
+                    <li style="list-style: none; display: inline-block; margin-left: 60px;"><a href="gallery.html" style="text-decoration: none; color: #fff; font-size: 13px;">GALLERY</a></li>
+                    <li style="list-style: none; display: inline-block; margin-left: 60px;"><a href="experience.html" style="text-decoration: none; color: #fff; font-size: 13px;">EXPERIENCES</a></li>
+                    <li style="list-style: none; display: inline-block; margin-left: 60px;"><a href="https://www.instagram.com/"><i class="fab fa-instagram" style="color: #fff;"></i></a></li>
+                    <li style="list-style: none; display: inline-block; margin-left: 60px;"><a href="https://www.facebook.com/"><i class="fab fa-facebook" style="color: #fff;"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <main style="padding-top: 30px;">
+            <section class="intro" style="color: #fff; text-align: center; padding: 50px 0;">
+                <h2 style="font-size: 50px; margin-bottom: 20px;">The Radiant Joy and Laughter of My Beloved Apak</h2>
+                <p style="font-size: 18px; line-height: 1.6; margin-bottom: 30px;">This page is a heartfelt tribute to my dad, showcasing a rich collection of pictures and videos that celebrate his nearly 30 years of unwavering dedication and passion as a teacher. Through these visual memories, we honour his remarkable journey, the countless lives he has touched, and the profound impact he has made in the world of education.</p>
+            </section>
+            
+            <section class="gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; justify-items: center; padding: 20px;">
+                <div class="gallery-item" style="position: relative; overflow: hidden;">
+                    <img src="g11.jpeg" alt="Image 1" onclick="openLightbox(this)" style="width: 100%; height: auto; cursor: pointer; transition: transform 0.2s ease;">
+                    <div class="caption" style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; text-align: center; font-size: 14px;">Olahraga Kebangsaan di Langkawi- Makam Mashuri (Jun 2000)</div>
+                </div>
+                <div class="gallery-item" style="position: relative; overflow: hidden;">
+                    <img src="g4.jpeg" alt="Image 2" onclick="openLightbox(this)" style="width: 100%; height: auto; cursor: pointer; transition: transform 0.2s ease;">
+                    <div class="caption" style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; text-align: center; font-size: 14px;">My Umi & Apak at Borneo Culture Museum (October 2023)</div>
+                </div>
+                <div class="gallery-item" style="position: relative; overflow: hidden;">
+                    <img src="g1.jpeg" alt="Image 3" onclick="openLightbox(this)" style="width: 100%; height: auto; cursor: pointer; transition: transform 0.2s ease;">
+                    <div class="caption" style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; text-align: center; font-size: 14px;">In Serikin Last Year.</div>
+                </div>
+                <div class="gallery-item" style="position: relative; overflow: hidden;">
+                    <img src="a1%20(1).jpg" alt="Image 4" onclick="openLightbox(this)" style="width: 100%; height: auto; cursor: pointer; transition: transform 0.2s ease;">
+                    <div class="caption" style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; text-align: center; font-size: 14px;">MSSM Bahagian Mukah.</div>
+                </div>
+                <div class="gallery-item" style="position: relative; overflow: hidden;">
+                    <img src="a1%20(2).jpg" alt="Image 5" onclick="openLightbox(this)" style="width: 100%; height: auto; cursor: pointer; transition: transform 0.2s ease;">
+                    <div class="caption" style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; text-align: center; font-size: 14px;">Sukan Malaysia SUKMA at Tun Fatimah Stadium, Melaka (15 June 2010)</div>
+                </div>
+                <div class="gallery-item" style="position: relative; overflow: hidden;">
+                    <img src="a1%20(3).jpg" alt="Image 6" onclick="openLightbox(this)" style="width: 100%; height: auto; cursor: pointer; transition: transform 0.2s ease;">
+                    <div class="caption" style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; text-align: center; font-size: 14px;">Sukan Tahunan Sekolah Sekolah Mengengah Kebangsaan Dalat.</div>
+                </div>
+                <div class="gallery-item" style="position: relative; overflow: hidden;">
+                    <img src="a1%20(4).jpg" alt="Image 7" onclick="openLightbox(this)" style="width: 100%; height: auto; cursor: pointer; transition: transform 0.2s ease;">
+                    <div class="caption" style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; text-align: center; font-size: 14px;">My Umi and Apak after Marriage (1996)</div>
+                </div>
+                <div class="gallery-item" style="position: relative; overflow: hidden;">
+                    <img src="a1%20(5).jpg" alt="Image 8" onclick="openLightbox(this)" style="width: 100%; height: auto; cursor: pointer; transition: transform 0.2s ease;">
+                    <div class="caption" style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; text-align: center; font-size: 14px;">Hari Raya in 2015</div>
+                </div>
+                <div class="gallery-item" style="position: relative; overflow: hidden;">
+                    <img src="g7.jpeg" alt="Image 9" onclick="openLightbox(this)" style="width: 100%; height: auto; cursor: pointer; transition: transform 0.2s ease;">
+                    <div class="caption" style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; text-align: center; font-size: 14px;">Hari Raya in 2024</div>
+                </div>
+                <div class="gallery-item" style="position: relative; overflow: hidden;">
+                    <img src="f1.jpeg" alt="Image 10" onclick="openLightbox(this)" style="width: 100%; height: auto; cursor: pointer; transition: transform 0.2s ease;">
+                    <div class="caption" style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; text-align: center; font-size: 14px;">Second Day of Hari Raya Photoshoot.</div>
+                </div>
+                <div class="gallery-item" style="position: relative; overflow: hidden;">
+                    <img src="f2.jpeg" alt="Image 11" onclick="openLightbox(this)" style="width: 100%; height: auto; cursor: pointer; transition: transform 0.2s ease;">
+                    <div class="caption" style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; text-align: center; font-size: 14px;">Always the Formal Style.</div>
+                </div>
+                 <div class="gallery-item" style="position: relative; overflow: hidden;">
+                    <img src="keluarga.jpeg" alt="Image 11" onclick="openLightbox(this)" style="width: 100%; height: auto; cursor: pointer; transition: transform 0.2s ease;">
+                    <div class="caption" style="position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; text-align: center; font-size: 14px;">The Cutest Family Picture of US!</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="lightbox" style="display: none; position: fixed; z-index: 10; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9);">
+        <span onclick="closeLightbox()" style="position: absolute; top: 20px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span>
+        <img id="lightbox-img" src="" style="margin: auto; display: block; width: 80%; max-width: 700px;">
+        <div id="lightbox-caption" style="text-align: center; color: #ccc; padding: 10px 0; height: 150px;"></div>
+    </div>
+
+    <script>
+        function openLightbox(img) {
+            var lightbox = document.getElementById("lightbox");
+            var lightboxImg = document.getElementById("lightbox-img");
+            var lightboxCaption = document.getElementById("lightbox-caption");
+
+            lightbox.style.display = "block";
+            lightboxImg.src = img.src;
+            lightboxCaption.innerHTML = img.nextElementSibling.innerHTML;
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+</body>
+</html>

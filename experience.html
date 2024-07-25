@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences - My Hero, My Apak</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="guitar.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="biodata.html">BIODATA</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="experience.html">EXPERIENCES</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <section class="intro">
+                <h3>Celebrating 30 years of dedication and passion in education, my dad has touched countless lives, nurturing minds and fostering a love for learning.</h3> 
+                <div class="image-caption-container">
+                    <div class="image-item">
+                        <img src="dfdf.jpeg" alt="Image 1" class="centered-image">
+                        <div class="caption"></div>
+                    </div>
+                    <div class="image-item">
+                        <img src="ghgh2.jpeg" alt="Image 2" class="centered-image">
+                        <div class="caption"></div>
+                    </div>
+                    <div class="image-item">
+                        <img src="ghgh3.jpeg" alt="Image 3" class="centered-image">
+                        <div class="caption"></div>
+                    </div>
+                    <div class="image-item">
+                        <img src="ghgh5.jpeg" alt="Image 4" class="centered-image">
+                        <div class="caption">Behold the pinnacle of his nearly three-decade-long journey as a teacher and coach, showcasing some of his most extraordinary achievements and unparalleled experiences.</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function displayCurrentTime() {
+            var currentTimeElement = document.getElementById('current-time');
+
+            // Create a new Date object
+            var now = new Date();
+
+            // Adjust time zone offset to Malaysian time (GMT+8)
+            var malaysiaTime = new Date(now.getTime() + (8 * 60 * 60 * 1000));
+
+            // Format the time as HH:MM:SS
+            var hours = malaysiaTime.getUTCHours().toString().padStart(2, '0');
+            var minutes = malaysiaTime.getUTCMinutes().toString().padStart(2, '0');
+            var seconds = malaysiaTime.getUTCSeconds().toString().padStart(2, '0');
+
+            // Display the formatted time
+            currentTimeElement.textContent = 'Current Time in Malaysia: ' + hours + ':' + minutes + ':' + seconds;
+        }
+
+        // Call the function initially to display the current time
+        displayCurrentTime();
+
+        // Refresh the time every second
+        setInterval(displayCurrentTime, 1000);
+    </script>
+</body>
+</html>
